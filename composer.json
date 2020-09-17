@@ -1,0 +1,17 @@
+{
+    "name": "gaelle/bleuets-rose_mvc",
+    "authors": [
+        {
+            "name": "Gaelle Kerforne",
+            "email": "gkerforne@gmail.com"
+        }
+    ],"autoload": {
+        "psr-4" :{
+            "Projet\\" : "/"
+        }
+
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.2"
+    }
+}

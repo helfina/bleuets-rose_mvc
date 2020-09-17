@@ -11,15 +11,19 @@ if(file_exists(__DIR__ . '/.env')){
 }
 
 // Autoloader
-require_once '/Controllers/Autoloader.php';
+require_once 'Controllers/Autoloader.php';
 Autoloader::register();
-
+$controllerHome = Controller::home();
 // Définition de la page courante
 if (isset($_GET['page']) AND !empty($_GET['page'])) {
     $page = trim(strtolower($_GET['page']));
     if($_GET['page'] == 'home'){
-        Controller::ome();
+       return  $controllerHome;
 
+    }else{
+        echo 'error 4041';
     }
     
+}else{
+    echo 'error 404';
 }

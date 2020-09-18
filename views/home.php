@@ -19,7 +19,7 @@
 
 
 
-    <main class="container">
+    <main>
 
         <section class="Boutiques">
             <h1>Bleuets Rose</h1>
@@ -35,7 +35,7 @@
 
                     <figcaption >
 
-                        <address class="col-12 adresse">
+                        <address class="adresse">
                             2 Rue de buléon<br>
                             56660 Saint-Jean-Brevelay<br>
                             <a href="tel:+33297604165">Tel : 02.97.60.41.65</a>
@@ -97,7 +97,7 @@
 
                     <figcaption >
 
-                        <address class="col-12 adresse">
+                        <address class="adresse">
                             1 route de vannes<br>
                             56390 Grand-Champ<br>
                             <a href="tel:+33952461614">Tel : 09.52.46.16.14</a>
@@ -167,7 +167,7 @@
                     <figure class="item">
                         <img class=" item__image"
                             src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
-                        <figcaption class="col-12 item__body">
+                        <figcaption class="item__body">
                             <h4 class="item__title">Titre 1</h4>
                             <p class="item__description">
                                 Description de l'image Lorem ipsum dolor sit amet consectetur

@@ -20,6 +20,9 @@ class Controller{
     static function error404(){ 
         require './Views/error.php';
     }
+    static function admin(){ 
+        require './Views/admin/admin.php';
+    }
 
 }
 

@@ -6,7 +6,6 @@
 
         <nav class="menu_" id="Menu">
          
-            <!-- *****menu******* -->
             <ul class="navbar">
                 <li>
                     <a href="index.php?page=home">Accueil</a>

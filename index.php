@@ -10,20 +10,40 @@ if(file_exists(__DIR__ . '/.env')){
     $dotenv->load();
 }
 
-// Autoloader
+// AUTOLOADER POUR CHARGER LES CLASSES
 require_once 'Controllers/Autoloader.php';
 Autoloader::register();
-$controllerHome = Controller::home();
-// Définition de la page courante
-if (isset($_GET['page']) AND !empty($_GET['page'])) {
-    $page = trim(strtolower($_GET['page']));
-    if($_GET['page'] == 'home'){
-       return  $controllerHome;
 
+
+
+
+// DEFINITION DE LA PAGE COURANTE
+if (isset($_GET['page']) ) 
+{
+    // $page = trim(strtolower($_GET['page']));
+    if($_GET['page'] == 'home'){ 
+        
+     
+    }elseif($_GET['page'] == 'galerie'){ 
+       return Controller::galery();
+
+
+    }elseif($_GET['page'] == 'contact'){ 
+        return Controller::contact();
+       
+
+    }elseif($_GET['page'] == 'rgpd'){ 
+        return Controller::rgpd();
+      
+
+    }elseif($_GET['page'] == 'sitemap'){ 
+        return Controller::sitemap();
+   
     }else{
-        echo 'error 4041';
+        echo 'error';
+        return Controller::home();
     }
-    
 }else{
-    echo 'error 404';
+    return Controller::error404();       
+    die(' Error : ' . $e->getMessage());
 }

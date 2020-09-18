@@ -3,17 +3,17 @@
 
 <head>
 
-    <?php include_once 'Views/includes/head.php'?>
+    <?php include_once './Views/includes/head.php'?>
     <title><?= ucfirst($page) ?> - Bleuets Rose</title>
 
 </head>
 
 <body class="container">
 
-    <?php include_once 'Views/includes/header.php'?>
+    <?php include_once './Views/includes/header.php'?>
 
-    <div class="slider row" id="slider">
-        <img class="img-resp col-12" id="slide"
+    <div class="slider" id="slider">
+        <img  id="slide"
             src="assets/images/slider/13923533_1387945637887780_3845945640515613113_o.jpg" alt="Bouquets">
     </div>
 
@@ -23,17 +23,17 @@
 
         <section class="Boutiques">
             <h1>Bleuets Rose</h1>
-            <article class="col-s-12 col-txs-6 col-6 ">
+            <article >
 
                 <h2>St-Jean-brevelay</h2>
 
-                <figure class="row">
+                <figure >
 
-                    <img class="img-resp col-12" src="assets/images/93615128_3473101756038814_3519088746832068608_o.jpg"
+                    <img  src="assets/images/93615128_3473101756038814_3519088746832068608_o.jpg"
                         alt="devanture du magasins de st jean brevelay">
 
 
-                    <figcaption class="row">
+                    <figcaption >
 
                         <address class="col-12 adresse">
                             2 Rue de buléon<br>
@@ -43,7 +43,7 @@
 
                         <h3>Horaires</h3>
 
-                        <table class="col-12">
+                        <table>
                             <tbody>
                                 <tr>
                                     <td class="day">Lundi</td>
@@ -87,15 +87,15 @@
                 </figure>
             </article>
 
-            <article class="col-s-12 col-txs-6 col-6 ">
+            <article >
                 <h2>Grand-champ</h2>
 
-                <figure class="row">
+                <figure >
 
-                    <img class="img-resp col-12" src="assets/images/94270775_109297020750630_2813684696821530624_o.jpg"
+                    <img  src="assets/images/94270775_109297020750630_2813684696821530624_o.jpg"
                         alt="devanture du magasin de Grand Chamd">
 
-                    <figcaption class="row">
+                    <figcaption >
 
                         <address class="col-12 adresse">
                             1 route de vannes<br>
@@ -104,7 +104,7 @@
                         </address>
 
                         <h3>Horaires</h3>
-                        <table class="col-12">
+                        <table >
 
                             <tbody>
                                 <tr>
@@ -161,11 +161,11 @@
                         <path d="M0 0h24v24H0z" fill="none" />
                     </svg>
                 </div>
-                <div class="row blockOne">
+                <div class=" blockOne">
 
 
-                    <figure class="col-ts-2 col-pcl-3 col-3  item">
-                        <img class="img_resp item__image"
+                    <figure class="item">
+                        <img class=" item__image"
                             src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
                         <figcaption class="col-12 item__body">
                             <h4 class="item__title">Titre 1</h4>
@@ -176,8 +176,8 @@
                             </p>
                         </figcaption>
                     </figure>
-                    <figure class="col-ts-2 col-pcl-3 col-3  item">
-                        <img class="img_resp item__image"
+                    <figure class="item">
+                        <img class=" item__image"
                             src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 2</h4>
@@ -188,8 +188,8 @@
                         </figcaption>
 
                     </figure>
-                    <figure class="col-ts-2 col-pcl-3 col-3  item">
-                        <img class="img_resp item__image"
+                    <figure class="item">
+                        <img class=" item__image"
                             src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 3</h4>
@@ -201,9 +201,9 @@
                     </figure>
 
                 </div>
-                <div class="row blockTwo">
-                    <figure class="col-ts-2 col-pcl-3 col-3  item">
-                        <img class="img_resp item__image"
+                <div class=" blockTwo">
+                    <figure class="item">
+                        <img class=" item__image"
                             src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 4</h4>
@@ -213,8 +213,8 @@
                                 nostrum!</p>
                         </figcaption>
                     </figure>
-                    <figure class="col-ts-2 col-pcl-3 col-3  item">
-                        <img class="img_resp item__image"
+                    <figure class="item">
+                        <img class=" item__image"
                             src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 5</h4>
@@ -223,8 +223,8 @@
                                 minima voluptatem dolorum quia, nisi dignissimos non porro esse rerum debitis. Aut.</p>
                         </figcaption>
                     </figure>
-                    <figure class="col-ts-2 col-pcl-3 col-3  item">
-                        <img class="img_resp item__image"
+                    <figure class="item">
+                        <img class=" item__image"
                             src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 6</h4>
@@ -259,7 +259,7 @@
                 </svg>
             </a>
 
-            <div class="row">
+            <div >
                 <aside class="col-s-12 col-tl-6 col-6">
                     <div class="fb-root"></div>
 
@@ -279,7 +279,7 @@
                     </div>
                 </aside>
 
-                <aside class="gc">
+                <aside class="col-s-12 col-tl-6 col-6">
                     <div class="fb-root"></div>
                     <script crossorigin="anonymous"
                         src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1" async defer>
@@ -301,7 +301,7 @@
 
     </main>
 
-    <?php include_once 'Views/includes/footer.php'?>
+    <?php include_once './Views/includes/footer.php'?>
 
    
     <script src="<?= PATH?>assets/js/slider.min.js" defer></script>

@@ -1,0 +1,36 @@
+DirectoryIndex index.php
+
+
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_\-]*)?/?$ index.php?page=$1&%{QUERY_STRING}
+# RewriteRule ^ (. *) $ Https://bleuets-rose.com/$1 [R = 301, L]
+
+DirectoryIndex indexAdmin.php
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_\-]*)?/?$ indexAdmin.php?admin=$1&%{QUERY_STRING}
+# RewriteRule ^ (. *) $ Https://bleuets-rose.com/$1 [R = 301, L]
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>

@@ -1,6 +1,7 @@
 <?php
+
 require_once 'Models/config.php';
-require_once 'Models/db.php';
+
 require_once 'Controllers/controllerBack.php';
 //AUTOLOAD.PHP GENERE AVEC COMPOSER
 require_once __DIR__  . '/vendor/autoload.php';
@@ -17,34 +18,27 @@ Autoloader::register();
 
 // DEFINITION DE LA PAGE COURANTE
 if (isset($_GET['page']) AND !empty($_GET['page'])) {
-    $page = trim(strtolower($_GET['page']));
-    
-    var_dump($page);
-    exit;
-}else{
-
+    $page = trim(strtolower($_GET['page']));    
+}
+else{
     $page = 'home';
-    return Controller::home();
-    
-    
 }
 
+// Tableau contenant toutes les pages
+$allPages = scandir('Views/');
 
-// if($_GET['page'] == ($_GET ['galerie'])){ 
-//     $page = 'galerie';
-//             return Controller::galery();        
-//             }
-//             elseif($_GET['page'] == ($_GET ['contact'])){ 
-//                 return Controller::contact();       
-    
-//             }
-//             elseif($_GET['page'] == ($_GET ['rgpd'])){ 
-//                 return Controller::rgpd();
-          
-//             }
-//             elseif($_GET['page'] == ($_GET ['sitemap'])){ 
-//                 return Controller::sitemap();   
-//             }
-//             elseif($_GET['page'] == ($_GET ['admin'])){
-//                 return Controller::admin();
-//             }
+// Vérification de l'existence de la page
+if (in_array($page.'.php', $allPages)) {
+
+    // Connexion à la base de données
+    include_once 'Models/db.php';
+
+    // Inclusion de la page
+    include_once 'Views/'.$page.'.php';
+
+} else {
+    $page = 'error';
+    // Inclusion de la page erreur
+    include_once 'views/error.php';
+
+}

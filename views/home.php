@@ -305,7 +305,7 @@
 
    
     <script src="<?= PATH?>assets/js/slider.min.js" defer></script>
-    <script src="<?= PATH?>assets/js/carousel.min.js" defer></script>
+    <!-- <script src="<?= PATH?>assets/js/carousel.min.js" defer></script> -->
 </body>
 
 </html>

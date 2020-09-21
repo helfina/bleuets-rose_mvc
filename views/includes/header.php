@@ -4,7 +4,7 @@
             <img class="logo" src="assets/images/logobr.png" alt="logo">
         </a>
 
-        <nav class="menu_" id="Menu">
+        <nav class="menu" id="Menu">
          
             <ul class="navbar">
                 <li>

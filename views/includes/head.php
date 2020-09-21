@@ -30,18 +30,16 @@
 
 <!-- CSS Styles -->
 
-<link rel="stylesheet" href="<?= PATH?>assets/css/grille.css">
-
-<link rel="stylesheet" href="<?= PATH?>assets/css/footer.css">
+<!-- <link rel="stylesheet" href="<?= PATH?>assets/css/footer.css"> -->
 
 <link rel="stylesheet" href="<?= PATH?>assets/css/header.css">
 
 
-<link rel="stylesheet" href="<?= PATH?>assets/css/galerie.css">
-<link rel="stylesheet" href="<?= PATH?>assets/css/contact.css">
-<link rel="stylesheet" href="<?= PATH?>assets/css/index.css">
+<!-- <link rel="stylesheet" href="<?= PATH?>assets/css/galerie.css"> -->
+<!-- <link rel="stylesheet" href="<?= PATH?>assets/css/contact.css"> -->
+<link rel="stylesheet" href="<?= PATH?>assets/css/home.css">
 
 
 <!-- JS Files -->
 
-<script src="<?= PATH?>assets/js/header.min.js" defer></script>
+<!-- <script src="<?= PATH?>assets/js/header.min.js" defer></script> -->

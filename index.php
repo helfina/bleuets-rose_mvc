@@ -1,8 +1,5 @@
 <?php
 
-require_once 'Models/config.php';
-
-require_once 'Controllers/controllerBack.php';
 //AUTOLOAD.PHP GENERE AVEC COMPOSER
 require_once __DIR__  . '/vendor/autoload.php';
 
@@ -10,6 +7,11 @@ if(file_exists(__DIR__ . '/.env')){
     $dotenv = \Dotenv\Dotenv::createimmutable(__DIR__);
     $dotenv->load();
 }
+
+require_once 'Models/config.php';
+
+require_once 'Controllers/controller.php';
+
 
 // AUTOLOADER POUR CHARGER LES CLASSES
 require_once 'Controllers/Autoloader.php';
@@ -30,10 +32,7 @@ $allPages = scandir('Views/');
 // Vérification de l'existence de la page
 if (in_array($page.'.php', $allPages)) {
 
-    // Connexion à la base de données
-    include_once 'Models/db.php';
-
-    // Inclusion de la page
+     // Inclusion de la page
     include_once 'Views/'.$page.'.php';
 
 } else {

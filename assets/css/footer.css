@@ -1,0 +1,153 @@
+footer {
+  padding: 5px;
+  color: whitesmoke;
+  background-color: #08090E;
+}
+
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: #D7C5FA;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer div article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer div article h3 {
+  text-align: center;
+}
+
+footer div article address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div article address div {
+  width: 45%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3px;
+}
+
+footer div article aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div article aside a {
+  padding: 3px;
+  margin: 3px;
+  width: 40%;
+}
+
+footer div article aside a img {
+  width: 100%;
+  height: auto;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p:nth-child(2) a {
+  padding: 3px;
+}
+
+/* @media only screen and (min-width: 320px) {
+
+    footer {
+        color: whitesmoke;
+        background-color: #08090E;
+        font-size: small;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    footer a:hover{
+        background-color: #D7C5FA;
+    }
+    footer div article address div{
+        padding: 5px;
+    }
+    
+    footer div aside a img {
+        width: 50% 
+    }
+    footer div article:last-child ul{
+        list-style-type: none;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    footer>p{
+        text-align: center;
+    }
+    
+}
+    
+@media only screen and (min-width: 425px){
+        footer div article address {
+            display: flex;
+            justify-content: space-around;
+        }
+        footer div aside{
+            display: flex;
+            justify-content: space-around;
+        }
+        footer div aside a{
+            padding: 3px;
+        }
+        footer div aside a img {
+            width: auto;
+            max-height: 60px;
+        }
+        footer p{       
+                display: flex;
+                justify-content: space-around;       
+        }
+} */
+/*# sourceMappingURL=footer.css.map */

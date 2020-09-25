@@ -37,7 +37,7 @@
 
                         <address class="adresse">
                             2 Rue de buléon<br>
-                            56660 Saint-Jean-Brevelay<br>
+                            56660 Saint-Jean-Brevelay
                             <a href="tel:+33297604165">Tel : 02.97.60.41.65</a>
                         </address>
 
@@ -99,7 +99,7 @@
 
                         <address class="adresse">
                             1 route de vannes<br>
-                            56390 Grand-Champ<br>
+                            56390 Grand-Champ
                             <a href="tel:+33952461614">Tel : 09.52.46.16.14</a>
                         </address>
 
@@ -154,14 +154,14 @@
 
             <article class="carousel">
 
-                <div class="precedent" onclick=" ChangeSlide(-1) ">
+                <div class="precedent" onclick=" ChangeSlide(-1)">
                     <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                         fill="black">
                         <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
                         <path d="M0 0h24v24H0z" fill="none" />
                     </svg>
                 </div>
-                <div class=" blockOne">
+                <div class="blockOne">
 
 
                     <figure class="item">
@@ -201,7 +201,7 @@
                     </figure>
 
                 </div>
-                <div class=" blockTwo">
+                <div class="blockTwo">
                     <figure class="item">
                         <img class=" item__image"
                             src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
@@ -260,7 +260,7 @@
             </a>
 
             <div >
-                <aside class="col-s-12 col-tl-6 col-6">
+                <aside>
                     <div class="fb-root"></div>
 
                     <script crossorigin="anonymous"
@@ -279,7 +279,7 @@
                     </div>
                 </aside>
 
-                <aside class="col-s-12 col-tl-6 col-6">
+                <aside >
                     <div class="fb-root"></div>
                     <script crossorigin="anonymous"
                         src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1" async defer>
@@ -305,7 +305,8 @@
 
    
     <script src="<?= PATH?>assets/js/slider.min.js" defer></script>
-    <!-- <script src="<?= PATH?>assets/js/carousel.min.js" defer></script> -->
+    <script src="<?= PATH?>assets/js/carousel.min.js" defer></script>
+
 </body>
 
 </html>

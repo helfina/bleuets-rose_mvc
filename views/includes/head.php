@@ -29,13 +29,14 @@
     crossorigin="" />
 
 <!-- CSS Styles -->
-
+<link rel="stylesheet" href="<?= PATH?>assets/css/reset.css">
+<link rel="stylesheet" href="<?= PATH?>assets/css/header.css">
 <link rel="stylesheet" href="<?= PATH?>assets/css/footer.css">
+<link rel="stylesheet" href="<?= PATH?>assets/css/home.css">
 
-<!-- <link rel="stylesheet" href="<?= PATH?>assets/css/header.css"> -->
+
 
 
 <!-- <link rel="stylesheet" href="<?= PATH?>assets/css/galerie.css"> -->
 <!-- <link rel="stylesheet" href="<?= PATH?>assets/css/contact.css"> -->
-<!-- <link rel="stylesheet" href="<?= PATH?>assets/css/home.css"> -->
 

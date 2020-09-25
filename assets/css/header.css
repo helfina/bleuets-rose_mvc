@@ -1,29 +1,30 @@
-@media only screen and (min-width: 320px){
-    header{
-        display: flex; 
-        background-color: #08090E;
-    }
-    header>a:first-child{
-      
-        padding: 5px 0 0 5px;
-    }
-    img.logo {
-        width: 100%;
-        height: auto;
-    }
-    nav>ul{
-        display: flex;
-    }
-    
-    nav>ul>li{
-        font-size: large;
-        list-style-type: none;  
-    }
-    nav>ul>li>a{
-        color: white;     
-        text-decoration: none;   
-        padding-right: 10px;
-    }
-    
+@media only screen and (min-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #08090E;
+  }
+  header a:first-child {
+    padding: 5px 0 0 5px;
+  }
+  header a:first-child img.logo {
+    width: 100%;
+    height: auto;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul > li {
+    font-size: large;
+    list-style-type: none;
+  }
+  header nav ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+  }
 }
-
+/*# sourceMappingURL=header.css.map */

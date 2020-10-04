@@ -1,0 +1,95 @@
+footer{
+    padding: 5px;
+    color: whitesmoke;
+    background-color: #08090E;
+    a{
+        color: whitesmoke;
+        text-decoration: none; 
+        
+    }
+    a:hover{
+        background-color: #D7C5FA;
+    }
+    div{
+        display: flex;
+        justify-content: space-evenly;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        article h3{
+            text-align: center;
+        }
+        article address
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        article address div{
+            width: 45%;
+            flex-direction: column;
+            padding: 3px;           
+        }
+        article aside{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        article aside a {
+        padding: 3px;
+        margin: 3px;
+           width: 40%;          
+        }
+        article aside a img{
+            width:100%;
+            height: auto;
+        }
+    }
+    p{
+        text-align: center;
+    }
+   p:nth-child(2) a{
+       padding: 3px;
+   }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+    footer{
+        div article{
+            width: 50%;
+            justify-content: center;
+        }
+        div article:nth-child(1) address{
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        div article:nth-child(1) address div{
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+        div article:nth-child(2) aside{
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px){
+    footer{
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+    
+
+
+

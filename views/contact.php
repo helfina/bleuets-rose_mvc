@@ -4,7 +4,7 @@
 <head>
 
     <?php include_once './Views/includes/head.php'?>
-    
+    <link rel="stylesheet" href="<?= PATH?>assets/css/contact.css">
     <title><?= ucfirst($page) ?> - Bleuets Rose</title>
 </head>
 
@@ -21,8 +21,8 @@
             <h1 >Bleuets Rose</h1>
   
             <form action="index.php?page=contact" method="post">
-            <?php if (!empty($envoi)) { echo "<h2>$envoi</h2>";} ?>
-            <?php if (!empty($error)) { echo "<h2>$error</h2>";} ?>
+                <?php if (!empty($envoi)) { echo "<h2>$envoi</h2>";} ?>
+                <?php if (!empty($error)) { echo "<h2>$error</h2>";} ?>
 
                 <fieldset >
                     <legend >
@@ -69,7 +69,7 @@
 
             <article>
 
-                <aside id="st_jean">
+                <aside>
 
                     <address >
                         2 Rue de buléon<br>
@@ -97,7 +97,7 @@
 
                 </aside>
 
-                <aside  id="grand_champs">
+                <aside>
 
                     <address >
                         1 route de vannes<br>

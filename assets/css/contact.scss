@@ -1,0 +1,162 @@
+main section:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+
+    h1 {
+        width: 100%;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    form>fieldset {
+        legend {
+            font-family: 'Merienda', cursive;
+            text-align: center;
+            font-size: large;
+        }
+
+        label {
+            font-size: medium;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            height: 25px;
+            border: none;
+            background-color: aliceblue;
+        }
+
+        textarea:nth-child(2) {
+            min-height: 100px;
+        }
+
+        div>button {
+            // min-height: 20px;
+            margin: 2% 3%;
+            font-size: medium;
+            background-color: #E6B3F2;
+            box-shadow: 0 15px 35px #562F83, 0 5px 15px #D7C5FA;
+            border: none;
+        }
+
+    }
+
+    article:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        width: 45%;
+
+        aside {
+            margin: 5px;
+        }
+
+        address {
+            align-self: center;
+            font-weight: bold;
+            text-align: center;
+            font-size: medium;
+            height: auto;
+        }
+
+        address>a {
+            color: black;
+
+        }
+
+
+    }
+}
+
+main div:last-child{
+ div.map{
+    height: 300px;
+    border: 2px double black;
+}
+}
+@media only screen and (min-width: 859px) and (max-width: 1023px) {
+
+    aside {
+        font-size: smaller;
+    }
+}
+
+@media only screen and (min-width: 842px) and (max-width: 858px) {
+    main {
+        font-size: small;
+
+        address {
+            font-size: small;
+        }
+    }
+}
+
+@media only screen and (min-width: 659px) and (max-width: 841px) {
+    main {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (min-width: 491px) and (max-width: 658px) {
+    main section:first-child {
+        flex-direction: column;
+        margin: 0 10px 0 10px;
+
+        form {
+            width: 100%;
+        }
+
+        article:last-child {
+            width: 100%;
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 409px) and (max-width: 490px) {
+    main {
+        font-size: small;
+
+        section:first-child {
+            flex-direction: column;
+            margin: 0 10px 0 10px;
+
+            form {
+                width: 100%;
+            }
+
+            article:last-child {
+                width: 100%;
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 490px) {
+    main {
+        font-size: x-small;
+
+        section:first-child {
+            flex-direction: column;
+            margin: 0 10px 0 10px;
+
+            form {
+                width: 100%;
+            }
+
+            article:last-child {
+                width: 100%;
+
+            }
+
+        }
+    }
+}

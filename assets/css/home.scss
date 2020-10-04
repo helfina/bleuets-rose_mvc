@@ -1,0 +1,188 @@
+/*==================================================
+                    SLIDER
+==================================================*/
+body div:nth-child(2) {
+
+    img {
+        max-height: 900px;
+    }
+}
+
+main {
+    /*==================================================
+                    BOUTIQUES
+    ==================================================*/
+    section:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        article {
+            width: 50%;
+        }
+
+        img {
+            height: 400px;
+        }
+    }
+ /*==================================================
+                    GALERIE
+    ==================================================*/
+    section:nth-child(2) article {
+
+        transition: transform 0.3s;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        display: inline-flex;
+        align-items: center;
+
+        figure {
+            background-color: #fff;
+            box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+            transition: transform 0.3s;
+            transform: translate3d(0, -1px, 0);
+            -webkit-transform: translate3d(0, -1px, 0);
+            -moz-transform: translate3d(0, -1px, 0);
+            -ms-transform: translate3d(0, -1px, 0);
+            -o-transform: translate3d(0, -1px, 0);
+        }
+
+        figure:hover {
+            transform: translate3d(0, -10px, 0);
+            -webkit-transform: translate3d(0, -10px, 0);
+            -moz-transform: translate3d(0, -10px, 0);
+            -ms-transform: translate3d(0, -10px, 0);
+            -o-transform: translate3d(0, -10px, 0);
+        }
+
+        figure img {
+            max-height: 300px;
+        }
+
+        figure p {
+            padding: 0 15px 0 15px;
+        }
+
+        .precedent,
+        .suivant {
+            color: black;
+            width: 30%;
+        }
+
+    }
+ /*==================================================
+                    FACEBOOK
+    ==================================================*/
+    section:last-child {
+        a {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+
+        a svg.svg-inline--fa.fa-facebook.fa-w-16 {
+            width: 15%;
+            color: #1e06f7;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        div aside {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border: 3px solid black;
+            margin-bottom: 1%;
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    main section:first-child img {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1200px) {
+    body {
+
+        font-size: small;
+    }
+
+    main section:first-child img {
+        height: 250px;
+    }
+
+    main section:last-child {
+        div:last-child {
+            flex-direction: column;
+            margin: 0 5px 0 5px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 760px) {
+    body {
+        font-size: small;
+    }
+
+    main section:first-child {
+
+        img {
+            height: 150px;
+        }
+
+    }
+
+    main section:nth-child(2) {
+        figcaption p {
+            display: none;
+        }
+    }
+
+    main section:last-child {
+        div:last-child {
+            flex-direction: column;
+            margin: 0 5px 0 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+    body {
+        font-size: small;
+        
+    }
+
+    main {
+        section:first-child{
+            display: flex;
+            flex-direction: column;
+            article{
+                width: 100%;
+            }
+            article img {
+                width: 100%;
+                height: auto;
+            }
+            article table{
+                width: auto;
+                height: auto;
+            }
+        }
+        section:nth-child(2), section:last-child {
+        
+                display: none;
+        }
+        
+    }       
+}

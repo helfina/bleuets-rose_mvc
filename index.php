@@ -39,5 +39,4 @@ if (in_array($page.'.php', $allPages)) {
     $page = 'error';
     // Inclusion de la page erreur
     include_once 'views/error.php';
-
 }

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'BioRhyme', serif;
+    font-size: medium;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h1 {
+        width: 100%;
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 2%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Merienda', cursive;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    address {
+        text-align: center;
+    }
+
+    /*tableau horaire*/
+    table {
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        table-layout: auto;
+    }
+
+}

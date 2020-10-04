@@ -4,6 +4,7 @@
 <head>
 
     <?php include_once 'Views/includes/head.php'?>
+    <link rel="stylesheet" href="<?= PATH?>assets/css/galerie.css">
     <title><?= ucfirst($page) ?> - Bleuets Rose</title>
 
 </head>

@@ -7,7 +7,7 @@
     <title><?= ucfirst($page) ?> - Bleuets Rose</title>
 </head>
 
-<body class="container">
+<body>
 
     <?php include_once './Views/includes/header.php'?>
     <!-- ==================================================================================================================
@@ -158,12 +158,13 @@
 
             <article class="carousel">
 
-                <div class="precedent" onclick=" ChangeSlide(-1)">
+                <div class="precedent">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
                         <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
                         <path d="M0 0h24v24H0z" fill="none" />
                     </svg>
                 </div>
+
                 <div class="blockOne">
 
 
@@ -192,7 +193,7 @@
                     </figure>
                     <figure class="item">
                         <img class=" item__image"
-                            src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg"
+                            src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg"
                             alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 3</h4>
@@ -225,7 +226,7 @@
                     </figure>
                     <figure class="item">
                         <img class=" item__image"
-                            src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg"
+                            src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg"
                             alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 6</h4>
@@ -234,7 +235,8 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="suivant" onclick=" ChangeSlide (1) ">
+
+                <div class="suivant">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
                         <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
                         <path d="M0 0h24v24H0z" fill="none" />

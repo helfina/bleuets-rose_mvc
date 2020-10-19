@@ -26,5 +26,11 @@
     text-decoration: none;
     padding-right: 10px;
   }
+  header nav ul > li:hover {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #562F83;
+  }
 }
 /*# sourceMappingURL=header.css.map */

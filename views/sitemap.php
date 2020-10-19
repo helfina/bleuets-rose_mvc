@@ -4,11 +4,11 @@
 <head>
 
     <?php include_once 'Views/includes/head.php'?>
-
+    <link rel="stylesheet" href="<?= PATH?>assets/css/Smap.css">
     <title><?= ucfirst($page) ?></title>
 </head>
 
-<body class="sitemap">
+<body>
 
     <?php include_once 'views/includes/header.php'?>
 <main>

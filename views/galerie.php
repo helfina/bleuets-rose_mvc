@@ -9,7 +9,7 @@
 
 </head>
 
-<body class="container">
+<body>
 
     <?php include_once 'Views/includes/header.php'?>
 
@@ -17,7 +17,7 @@
         <a href="index.php?page=home">Accueil > </a> Galerie
     </p>
     <h1>Galerie</h1>
-    <main class="container">
+    <main>
 
         <div class=" filtre">
 
@@ -28,9 +28,9 @@
 
         </div>
 
-        <div class="container photos">
+        <div class="photos">
 
-            <article class=" mariage">
+            <article class="mariage">
 
                 <figure class="item">
                     <img class="item__image" src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet fleure rose">

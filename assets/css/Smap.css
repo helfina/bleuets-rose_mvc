@@ -1,0 +1,16 @@
+body {
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+body ul li:hover {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #562F83;
+}
+/*# sourceMappingURL=Smap.css.map */

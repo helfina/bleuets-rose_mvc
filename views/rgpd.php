@@ -5,14 +5,14 @@
 <head>
 
     <?php include_once 'Views/includes/head.php'?>
-
+    <link rel="stylesheet" href="<?= PATH?>assets/css/rgpd.css">
     <title><?= ucfirst($page) ?></title>
 </head>
 
-<body class="container">
+<body>
 
     <?php include_once 'Views/includes/header.php'?>
-    <main class="row">
+    <main>
         <section>
             <h2>Définitions</h2>
 

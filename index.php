@@ -1,6 +1,6 @@
 <?php
 
-//AUTOLOAD.PHP GENERE AVEC COMPOSER
+//AUTOLOAD.PHP GENERES AVEC COMPOSER
 require_once __DIR__  . '/vendor/autoload.php';
 
 if(file_exists(__DIR__ . '/.env')){
@@ -9,34 +9,31 @@ if(file_exists(__DIR__ . '/.env')){
 }
 
 require_once 'Models/config.php';
-
-require_once 'Controllers/controller.php';
-
-
-// AUTOLOADER POUR CHARGER LES CLASSES
-require_once 'Controllers/Autoloader.php';
-Autoloader::register();
-
+require_once 'Controllers/controllerBack.php';
+require_once 'Controllers/controllerFront.php';
 
 // DEFINITION DE LA PAGE COURANTE
-if (isset($_GET['page']) AND !empty($_GET['page'])) {
-    $page = trim(strtolower($_GET['page']));    
-}
-else{
-    $page = 'home';
-}
+try{
+    $front = new controllerFront();
+    // debug($front);
+    // exit;
+    if (isset($_GET['page'])){
+        if ($_GET['page'] == 'home'){
+            controllerFront::home();
+        }elseif($_GET['page'] == 'galerie'){
+            controllerFront::galerie();
+        }elseif($_GET['page'] == 'contact'){
+            controllerFront::contact();
+        }elseif($_GET['page'] == 'rgpd'){
+            controllerFront::rgpd();
+        }elseif($_GET['page'] == 'sitemap'){
+            controllerFront::Smap();
+        }else{
+            controllerFront::home();
+        }    
+    }
 
-// Tableau contenant toutes les pages
-$allPages = scandir('Views/');
-
-// Vérification de l'existence de la page
-if (in_array($page.'.php', $allPages)) {
-
-     // Inclusion de la page
-    include_once 'Views/'.$page.'.php';
-
-} else {
-    $page = 'error';
-    // Inclusion de la page erreur
-    include_once 'views/error.php';
+}catch(Exception $e){
+    
+    require '/Views/error.php';
 }

@@ -15,18 +15,20 @@ require_once 'Controllers/controllerFront.php';
 // DEFINITION DE LA PAGE COURANTE
 try{
     $front = new controllerFront();
-    // debug($front);
-    // exit;
-    if (isset($_GET['page'])){
-        if ($_GET['page'] == 'home'){
+ 
+    if (isset($_GET['action'])){
+       // debug($_GET['page']);
+        //exit;
+        if ($_GET['action'] == 'home'){
+            
             controllerFront::home();
-        }elseif($_GET['page'] == 'galerie'){
+        }elseif($_GET['action'] == 'galerie'){
             controllerFront::galerie();
-        }elseif($_GET['page'] == 'contact'){
+        }elseif($_GET['action'] == 'contact'){
             controllerFront::contact();
-        }elseif($_GET['page'] == 'rgpd'){
+        }elseif($_GET['action'] == 'rgpd'){
             controllerFront::rgpd();
-        }elseif($_GET['page'] == 'sitemap'){
+        }elseif($_GET['action'] == 'sitemap'){
             controllerFront::Smap();
         }else{
             controllerFront::home();

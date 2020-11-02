@@ -8,13 +8,13 @@
          
             <ul class="navbar">
                 <li>
-                    <a href="index.php?page=home">Accueil</a>
+                    <a href="index.php?action=home">Accueil</a>
                 </li>
                 <li>
-                    <a href="index.php?page=galerie"> Galerie</a>
+                    <a href="index.php?action=galerie"> Galerie</a>
                 </li>
                 <li>
-                    <a href="index.php?page=contact">Contact</a>
+                    <a href="index.php?action=contact">Contact</a>
                 </li>               
               
             </ul>
